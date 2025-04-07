@@ -10,10 +10,10 @@ llms:
 
 cloud: azure
 os: linux-ubuntu-24-04-lts
-host: 172.206.206.86
+host: 172.xx.xx.86
 port: 22
-user: tbarradas
-pass: AZ$******
+user: anonymous
+pass: '******'
  
 setup-env-cmd:
 - add-apt-repository ppa:deadsnakes/ppa -y
