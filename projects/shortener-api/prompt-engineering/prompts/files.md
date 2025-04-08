@@ -1,5 +1,5 @@
-## Prompts (input/output) - Books API 
- 
+## Prompts (input/output) - Shortener API
+
 | Input | Claude | Deepseek | Qwen | Sabia | LLaMA | GPT | Gemini | Mistral |
 |---|---|---|---|---|---|---|---|---|
 | [0_system_command.txt](prompts/0_system_command.txt)                                        | -- | -- | -- | -- | -- | -- | -- | -- | 
