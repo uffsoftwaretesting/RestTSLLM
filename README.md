@@ -1,4 +1,4 @@
-# 🧪 Integration Test Generation Using LLMs and TSL
+# 🧩 Integration Test Generation Using LLMs and TSL
 
 This repository contains the artifacts for the study **"Combining TSL and LLMs to Automate REST API Testing: A Comparative Study"**, which evaluates the use of large language models (LLMs) to generate integration tests for REST APIs based on OpenAPI specifications with an intermediate step using TSL.
 
@@ -21,6 +21,21 @@ This repository contains the artifacts for the study **"Combining TSL and LLMs t
 
 Check instructions [here](llm-processor/README.md).
 
+## 🧪 How to reproduce the experiment
+
+1. Into `llm-processor/config` dir, make a copy from `.env.sample` to `.env` and add your API keys to each LLM provider. You can add only a few API keys if you only want to test a few LLMs.
+2. From root, run the follow command to process LLMs for each project that you want to reproduce. If you only want to reproduce the results for just one or few projects, feel free to run the command for whatever project you want (change `<project>` for the available projects `todo-api`, `hotels-api`, `restaurants-api`, `books-api`, `supermarket-api`, and/or `shortener-api`). You can run all LLMs if you have added all API keys or, just change the parameter `--llms=<model>` to point to a specific model (`claude`, `qwen`, `mistral`, `gpt`, `sabia`, `deepseek`, `llama`, or `gemini`)
+```
+cd llm-processor
+python3 -m pip install -r ./requirements.txt
+python3 main.py --prompts-dir="../projects/<project>/prompt-engineering/prompts" \
+                --system-command-file="../projects/<project>/prompt-engineering/prompts/0_system_command.txt" \
+                --output-dir="../projects/<project>/prompt-engineering/output" \
+                --llms=all
+```
+3. After it, you can open a project into Visual Studio (from `projects/<project>/<project>-llm-<model>`) and copy results (from `projects/<project>/prompt-engineering/output`) and paste into existing test project.
+4. You can run tests from IDE to verify the results from coverage and to collect mutation score you only need to run the follow command `dotnet stryker --output llm-test-generation-files`, but, some projects have some dependencies and you need to provide executing docker for example. The dependecies and full CLI commands for each project you can find in `dependencies-and-commands.yml`.
+
 ## 📊 Results
 
 The study evaluated multiple LLMs (GPT 4o (OpenAI), LLaMA 3.2 90b (Meta), Claude 3.5 Sonnet (Anthropic), Gemini 1.5 Pro (Google), Deepseek R1 (Deepseek), Mistral Large (Mistral), Qwen 2.5 32b (Alibaba), and Sabiá 3 (Maritaca)) using metrics such as:
@@ -35,7 +50,4 @@ Result can be found in:
 
 ## 📄 Paper
 
-A preprint of the full paper will be made available here upon acceptance.  
-In the meantime, the anonymous version used for submission is available at:
-
-📎 [Anonymous Submission (4Open)](https://anonymous.4open.science/r/integration-test-with-llm)
+A preprint of the full paper will be made available here upon acceptance. 
