@@ -51,3 +51,28 @@ Result can be found in:
 ## 📄 Paper
 
 A preprint of the full paper will be made available here upon acceptance. 
+
+## 📚 Citation
+[![Cite this paper](https://img.shields.io/badge/Cite%20this%20paper-SBES%202025-blue)](#citation)
+
+If you use **RestTSLLM** in your research or project, please cite:
+
+```bibtex
+
+@inproceedings{barradas2025tsl,
+  author    = {Thiago Barradas and Aline Paes and Vânia de Oliveira Neves},
+  title     = {Combining TSL and LLM to Automate REST API Testing: A Comparative Study},
+  booktitle = {Proceedings of the XXXIX Brazilian Symposium on Software Engineering (SBES)},
+  year      = {2025},
+  note      = {To appear}
+} 
+
+```
+
+**Text citation format:**
+
+```
+Barradas, T., Paes, A., & Neves, V. O. (2025). Combining TSL and LLM to Automate REST API Testing: A Comparative Study. In: Proceedings of the XXXIX Brazilian Symposium on Software Engineering (SBES). To appear.
+
+```
+
