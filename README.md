@@ -59,7 +59,7 @@ If you use **RestTSLLM** in your research or project, please cite:
 
 ```bibtex
 
-@inproceedings{barradas2025tsl,
+@inproceedings{barradas2025resttsllm,
   author    = {Thiago Barradas and Aline Paes and Vânia de Oliveira Neves},
   title     = {Combining TSL and LLM to Automate REST API Testing: A Comparative Study},
   booktitle = {Proceedings of the XXXIX Brazilian Symposium on Software Engineering (SBES)},
