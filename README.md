@@ -50,7 +50,7 @@ Result can be found in:
 
 ## 📄 Paper
 
-A preprint of the full paper will be made available here upon acceptance. 
+- [Paper - Combining TSL and LLM to Automate REST API Testing A Comparative Study](pdfs/paper.pdf) 
 
 ## 📚 Citation
 [![Cite this paper](https://img.shields.io/badge/Cite%20this%20paper-SBES%202025-blue)](#citation)
