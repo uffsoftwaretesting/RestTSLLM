@@ -75,7 +75,8 @@ Result can be found in:
 
 ## 📄 Paper
 
-- [Paper - Combining TSL and LLM to Automate REST API Testing A Comparative Study](pdfs/paper.pdf) 
+- [Official Paper - Combining TSL and LLM to Automate REST API Testing A Comparative Study](https://tinyurl.com/resttsllm-paper) 
+- [PDF Copy Paper - Combining TSL and LLM to Automate REST API Testing A Comparative Study](pdfs/paper.pdf) 
 
 ## 📚 Citation
 [![Cite this paper](https://img.shields.io/badge/Cite%20this%20paper-SBES%202025-blue)](#citation)
