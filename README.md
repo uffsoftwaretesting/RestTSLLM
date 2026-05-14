@@ -68,7 +68,6 @@ The study evaluated multiple LLMs (GPT 4o (OpenAI), LLaMA 3.2 90b (Meta), Claude
 - 📈 Code Coverage
 - 🧬 Mutation Score
 - 💰 Cost per Execution
-- 💰 Cost per Execution
 
 Result can be found in:
 - Output: [projects](projects/files.md).
