@@ -1,6 +1,6 @@
 Now I will teach you best practices for converting a TSL to integration tests with dotnet (xUnit). I will also always provide the namespace to use.
 
-Given the TSL provided above and the `PeopleAPI.IntegrationTests` namespace, a conversion to integration tests with dotnet (xUnit) should generate:
+Given the TSL provided above and the `<project_name>.IntegrationTests` namespace, a conversion to integration tests with dotnet (xUnit) should generate:
 
 ```csharp
 // File: UsersIntegrationTests.cs
